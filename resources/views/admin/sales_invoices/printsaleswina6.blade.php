@@ -253,7 +253,7 @@
 
             <!--start some other details-->
             <div class="row" style="float:left">
-                <div class="col-12">
+                <div class="col-12" style="float:left">
                     <span style="float:left"> SERVED BY: {{ auth()->user()->name }} </span>
                     <br>
                     <span style="float:left"> TOTAL NUMBER OF ITEMS SOLD = {{ count($sales_invoices_details) }} </span>
@@ -262,16 +262,19 @@
                     <br>
                     <span style="float:left"> INVOICE Number: {{ $data['auto_serial'] }} </span>
                 </div>
-            </div>
+            {{-- </div> --}}
             <!--end some other details-->
 
             <!--start about invoice-->
-            <div class="row">
-                <div class="col-12">
-                    <p>Prices Include VAT</p>
-                    <p>On Subjected Items Only</p>
-                    <p style="font-weight: bold;">Tax Card Number 200 - 185 - 128</p>
-                    <p style="font-weight: bold;">Brought to you by ESLAM</p>
+            {{-- <div class="row" style="float:left"> --}}
+                <div class="col-12" style="float:left">
+                    <span style="float:left">Prices Include VAT</span>
+                    <br>
+                    <span style="float:left">On Subjected Items Only</span>
+                    <br>
+                    <span style="float:left">Tax Card Number 200 - 185 - 128</span>
+                    <br>
+                    <span style="float:left">Brought to you by ESLAM</span>
                 </div>
             </div>
             <!--end about invoice-->
